@@ -1,0 +1,12 @@
+<h1>エラー祭り</h1>
+<h2>一覧ページ</h2>
+<%= link_to "新規投稿へ", new_post_path %>
+<div class="posts-container">
+  <% @posts.each do |t| %>
+    <div class="post">
+      <%= t.name %>
+      <%= t.age %>
+      <%= t.body %>
+    </div>
+  <% end %>
+</div>
