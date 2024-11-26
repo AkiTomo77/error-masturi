@@ -11,6 +11,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <h1>エラー祭り</h1>
+      <div class="header-list">
+        <ul>
+          <% if user_signed_in? %>
+            <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
+          <% else %>
+            <%= link_to "新規登録", new_user_registration_path %>
+            <%= link_to "ログイン", new_user_session_path %>
+          <% end %>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>

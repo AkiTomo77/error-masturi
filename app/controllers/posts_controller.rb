@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-	protect_from_forgery
+	protect_from_forgery #この記述は無視して！
+  before_action :authenticate_user!
 	def index
 		@posts = Post.all
 	end
