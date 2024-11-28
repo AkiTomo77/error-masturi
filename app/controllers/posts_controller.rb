@@ -19,6 +19,9 @@ class PostsController < ApplicationController
     end
   end
 
+  def show
+  end
+
 	def destroy
     post = Post.find(params[:id])
     post.destroy
@@ -27,6 +30,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:name, :age, :body, :user_id)
+    params.require(:post).permit(:age, :body, :user_id)
   end
 end
