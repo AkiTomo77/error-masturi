@@ -1,4 +1,5 @@
-<h1>一覧ページ</h1>
+<h2>機能編</h2>
+<h3>一覧ページ</h3>
 <%= link_to "新規投稿へ", new_post_path %>
 <div class="posts-container">
   <% @posts.each do |t| %>
@@ -9,4 +10,26 @@
       <%= button_to "削除する", post_path(t.id), method: :delete %> 
     </div>
   <% end %>
+</div>
+
+<h2>デザイン編</h2>
+<h3>要素を横並びにする</h3>
+<p>みんな大好き。横並び。</p>
+<div class="main-container">
+    <div class="box">要素1</div>
+    <div class="box">要素2</div>
+    <div class="box">要素3</div>
+    <div class="box">要素4</div>
+    <div class="box">要素5</div>
+    <div class="box">要素6</div>
+</div>
+
+<h3>ボタンデザイン</h3>
+<p>ボタンの構造って意外とシンプル。</p>
+<%= button_to "ボタン", posts_path, class: 'button' %>
+
+<h3>要素を重ねる</h3>
+<p>position使いこなせるだけでも、デザインの幅が広がります。</p>
+<div class="box2">
+  <div class="box3"></div>
 </div>
