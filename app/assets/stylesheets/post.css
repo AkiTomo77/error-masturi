@@ -1,0 +1,35 @@
+/* 要素を横並びにする */
+.box{
+    width: 100px;
+    height: 150px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.main-container{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ボタンデザイン */
+
+
+/* 要素を重ねる */
+.box2{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background: #a7baf8;
+}
+.box3{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background: #fad590;
+}
